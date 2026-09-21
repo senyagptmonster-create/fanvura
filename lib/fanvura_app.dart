@@ -178,11 +178,11 @@ class _FanvuraShellState extends State<FanvuraShell> {
                   ),
                   const SizedBox(height: 12),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
-                      Text('00:00 Low Tide (0.8m)', style: TextStyle(fontSize: 11, color: FanvuraTheme.muted)),
-                      Text('06:12 High Tide (4.2m)', style: TextStyle(fontSize: 11, color: FanvuraTheme.accent, fontWeight: FontWeight.bold)),
-                      Text('12:25 Low Tide (0.9m)', style: TextStyle(fontSize: 11, color: FanvuraTheme.muted)),
+                      Expanded(child: Text('00:00 Low Tide (0.8m)', style: TextStyle(fontSize: 11, color: FanvuraTheme.muted))),
+                      Expanded(child: Text('06:12 High Tide (4.2m)', textAlign: TextAlign.center, style: TextStyle(fontSize: 11, color: FanvuraTheme.accent, fontWeight: FontWeight.bold))),
+                      Expanded(child: Text('12:25 Low Tide (0.9m)', textAlign: TextAlign.end, style: TextStyle(fontSize: 11, color: FanvuraTheme.muted))),
                     ],
                   ),
                 ],
